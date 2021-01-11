@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/app.css">
     <title>Secondo esempio SASS</title>
   </head>
   <body>
     <div class="container-fluid">
       <!-- header -->
-      <header></header>
+      <header>
+        <div class="header-top">
+          <ul>
+            <li><a href="#"><i class="fas fa-phone-alt"></i>Link1</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i>Link2</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i>Link3</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i>Link4</a></li>
+            <li>
+              <select class="" name="language">
+                <option value="en">English</option>
+                <option value="it">Italian</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+
+      </header>
       <!-- /header -->
 
       <!-- main -->
@@ -24,9 +41,13 @@
           <h6>titolo 6</h6>
         </div>
         <div class="center">
-          <a href="#" class="btn-blue">Entra</a>
-          <a href="#" class="btn-orange">Invia</a>
-          <a href="#" class="btn-random">Altro pulsante</a>
+          <div class="img1"></div>
+          <div class="buttons">
+            <a href="#" class="btn-blue">Entra</a>
+            <a href="#" class="btn-orange">Invia</a>
+            <a href="#" class="btn-random">Altro pulsante</a>
+          </div>
+          <div class="img2"></div>
         </div>
         <div class="right"></div>
       </main>

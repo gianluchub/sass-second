@@ -1,6 +1,6 @@
 main {
   width: 100%;
-  height: calc(100% - #{$headerHeight * 2});
+  // height: calc(100% - #{$headerHeight * 2});
   background-image: url($mainImage);
   @include backgroundSizeCover;
   .left, .right {
@@ -14,6 +14,26 @@ main {
     height: 100%;
     width: 60%;
     background-color: yellow;
+
+    .buttons {
+      height: 350px;
+    }
+
+    .img1 {
+      height: 400px;
+      background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .img2 {
+      height: 400px;
+      background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
   }
   &::after {
     @include clearfix;

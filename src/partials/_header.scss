@@ -7,3 +7,34 @@ header {
     background-color: yellow;
   }
 }
+
+.header-top {
+  background-color: black;
+  height: $headerTopHeight;
+  ul {
+    float: right;
+    list-style: none;
+    height: 100%;
+    li {
+      display: inline-block;
+      padding: 0 10px;
+      height: 100%;
+      line-height: $headerTopHeight;
+      a {
+        text-decoration: none;
+        color: grey;
+        font-size: 14px;
+        &:hover {
+          color: white;
+          text-decoration: underline;
+        }
+        i {
+          color: $iconColor;
+          font-size: 20px;
+          margin-right: 5px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
