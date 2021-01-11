@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $brandColor;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  height: 100vh;
+  &-fluid {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.clearfix {
+  &::after {
+    @include clearfix;
+  }
+}
+
+// .btn-blue {
+//   @include btn;
+//   background-color: $btnColorBlue;
+//   border: 1px solid darken($btnColorBlue, $colorPercentage);
+//   &:hover {
+//     background-color: lighten($btnColorBlue, $colorPercentage);
+//   }
+// }
+// .btn-orange {
+//   @include btn;
+//   background-color: $btnColorOrange;
+//   border: 1px solid darken($btnColorOrange, $colorPercentage);
+//   &:hover {
+//     background-color: lighten($btnColorOrange, $colorPercentage);
+//   }
+// }
+
+.btn-blue {
+  @include btnFunction($btnColorBlue, $colorPercentage);
+}
+
+.btn-orange {
+  @include btnFunction($btnColorOrange, $colorPercentage);
+}
+
+.btn-random {
+  @include btnFunction(#CC2299, 18%);
+}
+
+// margin-top-15
+// margin-top-30
+// margin-top-45
+// margin-top-60
+
+// con ciclo FOR
+// @for $i from 1 through 4 {
+//
+//   .margin-top-#{$i * 15} {
+//     margin-top: #{$i * 15}px;
+//   }
+//
+// }
+
+// con ciclo WHILE
+$i: 15;
+@while $i <= 60 {
+
+  .margin-top-#{$i} {
+    margin-top: #{$i}px;
+  }
+  $i: $i + 15;
+
+}
+
+@each $title in h1, h2, h3, h4, h5, h6 {
+
+  #{$title} {
+    font-size: 22px;
+    color: orange;
+    font-weight: 700;
+  }
+
+}

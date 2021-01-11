@@ -1,0 +1,21 @@
+main {
+  width: 100%;
+  height: calc(100% - #{$headerHeight * 2});
+  background-image: url($mainImage);
+  @include backgroundSizeCover;
+  .left, .right {
+    float: left;
+    height: 100%;
+    width: 20%;
+    background-color: white;
+  }
+  .center {
+    float: left;
+    height: 100%;
+    width: 60%;
+    background-color: yellow;
+  }
+  &::after {
+    @include clearfix;
+  }
+}

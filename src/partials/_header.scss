@@ -1,0 +1,9 @@
+header {
+  width: 100%;
+  height: $headerHeight;
+  background-image: url($headerImage);
+  @include backgroundSizeCover;
+  &:hover {
+    background-color: yellow;
+  }
+}
